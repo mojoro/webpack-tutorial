@@ -1,17 +1,17 @@
-import myName from './myName';
-import printMe from './print';
+import myName from "./myName";
+import printMe from "./print";
 
 function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
+  const element = document.createElement("div");
+  const btn = document.createElement("button");
 
-  element.textContent = myName('Cody');
+  element.textContent = myName("Cody");
 
-  btn.innerHTML = 'Click me and check the console!';
+  btn.innerHTML = "Click me and check the console!";
   btn.onclick = printMe;
-  
+
   element.appendChild(btn);
-  
+
   return element;
 }
 
